@@ -1,0 +1,35 @@
+/* Banner */
+
+	#banner {
+		background-attachment:fixed;
+		background-color: #494d53;
+		background-image:url("../images/banner.jpg");
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:1400px 650px;
+		color: #d1d2d4;
+		position: bottom;
+		text-align: center;
+	}
+		
+		
+
+		#banner .button {
+			position: bottom;
+			margin-top: 200px;
+   	 		margin-bottom: 20px;
+    		margin-right: 300px;
+    		margin-left: 300px;
+			border-color: black !important;
+			color: black !important;
+			cursor: pointer;
+		}
+
+			#banner .button:hover {
+				background-color: darkgrey;
+				cursor: pointer;
+			}
+
+			#banner .button:active {
+				background-color: violet;
+			}

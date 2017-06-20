@@ -1,5 +1,12 @@
 /*@import url(font-awesome.min.css);*/
 @import url("http://fonts.googleapis.com/css?family=Lato:300,700");
+
+}
+/* Basic */
+	body {
+		background: #fff;
+	}
+
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .se-pre-con {
@@ -10,22 +17,6 @@
 	height: 100%;
 	z-index: 9999;
 	background: url(images/loading.gif) center no-repeat #fff;
-}
-/* Basic */
-	body {
-		background: #fff;
-	}
-	body .no-js #loader { display: none;  }
-body .js #loader { display: block; position: absolute; left: 100px; top: 0; }
-body .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loading.gif) center no-repeat #fff;
-}
 
 		body.is-loading * {
 			-moz-animation: none !important;

@@ -17,36 +17,30 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+			<style>
+				.no-js #loader { display: none;  }
+				.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+				.se-pre-con {
+					position: fixed;
+					left: 0px;
+					top: 0px;
+					width: 100%;
+					height: 100%;
+					z-index: 9999;
+					background: url(images/loading.gif) center no-repeat black;
+					border-color: black;
+				}
+			</style>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+			<script>
+					$(window).load(function() {
+					$(".se-pre-con").fadeOut("slow");;
+				});
+			</script>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style1.css" />
-			<style>
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(images/loading.gif) center no-repeat black;
-	border-color: black;
-}
-</style>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script>
-	//paste this code under head tag or in a seperate js file.
-	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-</script>
 			
 	</head>
 	<body class="landing">
@@ -79,7 +73,7 @@ if it's not present, don't show loader */
 				<div class="container">
 					<header class="major">
 						<h2 style="text-align:center;color:#ff704d">ABUOT US</h2>
-						<p>Hello World!!!!</br>
+						<p style="text-align: center">Hello World!!!!</br>
 							Hello World!!!</p>
 
 					</header>
